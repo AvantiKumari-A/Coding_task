@@ -8,11 +8,11 @@ System.out.println("Enter the three numbers: ");
 int a=sc.nextInt();
 int b=sc.nextInt();
 int c=sc.nextInt();
-if(a>b)
+if(a>b && a>c)
 {
 System.out.println("A is the greatest number");
 }
-else if(b>c){
+else if(b>a && b>c){
 System.out.println("B is greatest number");
 }
 else{
