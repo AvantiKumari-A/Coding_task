@@ -12,3 +12,5 @@ int greater= (a>b && a>c)? a : (b>a && b>c) ? b : c;
 System.out.println(greater + " is the greatest number");
 }
 }
+//(ternary operator syntax)
+//condition ? true : false;
