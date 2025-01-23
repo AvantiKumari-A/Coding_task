@@ -11,6 +11,7 @@ public static void main(String[] args){
 Scanner sc=new Scanner(System.in);
 System.out.println("Enter the age of the person: ");
 int age=sc.nextInt();
+sc.close();  
 if(age>=0 && age<=12){
 System.out.println("Child");
 }
