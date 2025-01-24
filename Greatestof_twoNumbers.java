@@ -13,8 +13,11 @@ sc.close();
 if(a>b){
 System.out.println(a + " is greater than " + b);
 }
-else{
+else if(b>a){
 System.out.println(b + " is greater than " + a);
+}
+else{
+   System.out.println("Both the numbers are equal"); 
 }
 }
 }
