@@ -1,4 +1,4 @@
-//To count the number of digits in an integer using while loop
+//To count the sum of digits in an integer using while loop
 
 import java.util.Scanner;
 class Count_digit{
@@ -6,21 +6,33 @@ public static void main(String[] args){
 Scanner sc=new Scanner(System.in);
 System.out.println("Enter the number: ");
 int a=sc.nextInt();
-int count=0;
+int sum=0;
 
 //If a is greater than 0
 while(a>0){
-a=a/10; //it reduces the digit for each iteration eg -> 153/10 (count = 1), 15 (count = 2), 1 (count = 3), 0 (condition fails)
-count++;
+sum+=a%10;
+a=a/10;
 }
-System.out.println("Number of digits in an integer is: "+ count);
+System.out.println("Sum of digits in an integer is: " + sum);
 }
 }
 
-/*First, a = 12345, count = 0
-After the first division (a = a / 10), a = 1234, count = 1
-After the second division (a = a / 10), a = 123, count = 2
-After the third division (a = a / 10), a = 12, count = 3
-After the fourth division (a = a / 10), a = 1, count = 4
-After the fifth division (a = a / 10), a = 0, count = 5
-Output: "Number of digits in an integer is: 5" */
+/*First, a = 123, sum = 0
+
+First iteration
+(sum+ = a % 10) = 0 + (123 % 10) = 0 +  3(remainder)
+sum = 3
+(a = a / 10) = 123/10 = 12(quotient)
+a = 12
+Second iteration
+(sum+ = a % 10) = 3 + (12 % 10) = 3 +  2(remainder)
+sum = 5
+(a = a / 10) = 12/10 = 1(quotient)
+a = 1
+Third iteration
+(sum+ = a % 10) = 5 + (1 % 10) = 5 +  1(remainder)
+sum = 6
+(a = a / 10) = 1/10 = 0(quotient)
+a = 0
+
+Output: Sum of digits in an integer is: 6 */
