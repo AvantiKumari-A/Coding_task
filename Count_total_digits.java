@@ -1,7 +1,7 @@
 //To count the  total number of digits in a given number using while loop
 
 import java.util.Scanner;
-class Count_digit{
+class Count_total_digits{
 public static void main(String[] args){
 Scanner sc=new Scanner(System.in);
 System.out.println("Enter the number: ");
