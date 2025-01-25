@@ -7,6 +7,7 @@ Scanner sc=new Scanner(System.in);
 System.out.println("Enter the value of a and b: ");
 int a=sc.nextInt();
 int b=sc.nextInt();
+sc.close();
 a=a+b;
 b=a-b;
 a=a-b;
