@@ -7,6 +7,7 @@ Scanner sc=new Scanner(System.in);
 System.out.println("Enter the value of a and b: ");
 int a=sc.nextInt();
 int b=sc.nextInt();
+sc.close();
 int temp;
 temp=a;
 a=b;
