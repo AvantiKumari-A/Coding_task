@@ -6,6 +6,7 @@ public static void main(String[] args){
 Scanner sc=new Scanner(System.in);
 System.out.println("Enter the number(1-7): ");
 int day=sc.nextInt();
+sc.close();
 switch(day){
 case 1:
 System.out.println("Today is Monady");
