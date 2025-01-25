@@ -6,6 +6,7 @@ public static void main(String[] args){
 Scanner sc=new Scanner(System.in);
 System.out.println("Enter the number: ");
 int a=sc.nextInt();
+sc.close();
 int n,large=0;
 while(a>0){
 n=a%10;
