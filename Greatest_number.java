@@ -8,6 +8,7 @@ System.out.println("Enter the three numbers: ");
 int a=sc.nextInt();
 int b=sc.nextInt();
 int c=sc.nextInt();
+sc.close();
 if(a>b && a>c)
 {
 System.out.println("A is the greatest number");
